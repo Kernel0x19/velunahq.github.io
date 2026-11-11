@@ -1,0 +1,72 @@
+---
+---
+<div id="progress-bar"></div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; width: 0; height: 0; pointer-events: none; opacity: 0; overflow: hidden;" aria-hidden="true">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" result="goo"></feColorMatrix>
+      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+    </filter>
+  </defs>
+</svg>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <img src="/veluna_icon.png" alt="Veluna" class="nav-logo" width="28" height="28">
+      veluna
+    </a>
+    <div class="nav-links">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#download" class="nav-link">Download</a>
+      <a href="#community" class="nav-link">Community</a>
+    </div>
+    <div class="nav-actions">
+      <a href="https://github.com/velunahq/veluna" class="gh-btn" target="_blank" rel="noopener" aria-label="GitHub Repository">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="gh-icon"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7C6.73 19.91 6.14 18 6.14 18c-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        <span class="gh-text">GitHub</span>
+        <span class="gh-star-wrap">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="gh-star-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span id="gh-star-count">62</span>
+        </span>
+      </a>
+      <a href="#download" class="dl-nav-btn blob-btn">
+        <span class="blob-btn__text">
+          <span>Download</span>
+        </span>
+        <span class="blob-btn__inner" aria-hidden="true">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+            <span class="blob-btn__blob"></span>
+          </span>
+        </span>
+      </a>
+      <button class="ham" id="ham" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobile-overlay" onclick="closeMobile()"></div>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-header">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="/veluna_icon.png" alt="Veluna" class="nav-logo" width="26" height="26">
+      <span class="mobile-nav-brand">veluna</span>
+    </div>
+    <button class="mobile-close" onclick="closeMobile()" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <a href="#features" onclick="closeMobile()">Features</a>
+  <a href="#download" onclick="closeMobile()">Download</a>
+  <a href="#community" onclick="closeMobile()">Community</a>
+  <a href="https://github.com/velunahq/veluna" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://discord.gg/u7QXUgPcqr" target="_blank" rel="noopener">Discord</a>
+  <a href="#download" class="m-dl" onclick="closeMobile()">Download Veluna</a>
+</div>

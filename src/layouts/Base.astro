@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Veluna - Free, Open-Source and Ad-Free Music Player",
+  description = "Veluna is the ultimate free, open-source, ad-free desktop music streaming app for Windows, macOS and Linux. Stream millions of tracks powered by YouTube, enjoy high-fidelity audio, synced lyrics, and offline downloads with zero paywalls or tracking."
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<meta name="description" content={description}>
+<meta name="keywords" content="music player, free music player, ad-free music, spotify alternative, free spotify alternative, ad free spotify alternative, apple music alternative, youtube music alternative, tidal alternative, youtube music desktop, youtube music client, desktop youtube music, stream youtube music, free music streaming, open source music player, high fidelity music, lossless audio, mp3 player, music downloader, youtube music downloader, mp3 downloader, offline music downloader, synchronized lyrics, lrc lyrics, audio equalizer, discord rich presence music, mpris music player, crossfade music player, spotify playlist import, exportify csv import, privacy music player, zero tracking music, tauri music player, veluna, veluna player, veluna music, desktop music streamer, windows music player, linux music player, mac music player, macos music player">
+<meta name="author" content="rry0ku">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://velunahq.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Veluna">
+<meta property="og:title" content="Veluna - Free, Open-Source and Ad-Free Music Player">
+<meta property="og:description" content="Stream millions of songs with zero ads, zero paywalls, and zero tracking. High-fidelity audio, offline downloads, and synced lyrics for Windows, macOS and Linux.">
+<meta property="og:url" content="https://velunahq.github.io/">
+<meta property="og:image" content="https://velunahq.github.io/og-image.png?v=2">
+<meta property="og:image:width" content="1909">
+<meta property="og:image:height" content="988">
+<meta property="og:image:alt" content="Veluna Desktop Music Player Interface">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Veluna - Free, Open-Source and Ad-Free Music Player">
+<meta name="twitter:description" content="Stream millions of songs with zero ads, zero paywalls, and zero tracking. High-fidelity audio, offline downloads, and synced lyrics for Windows, macOS and Linux.">
+<meta name="twitter:image" content="https://velunahq.github.io/og-image.png?v=2">
+<meta name="twitter:image:alt" content="Veluna Desktop Music Player Interface">
+
+<script type="application/ld+json">
+{`{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Veluna",
+  "operatingSystem": "Windows, macOS, Linux",
+  "applicationCategory": "MultimediaApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Veluna is a free, open-source, ad-free desktop music player powered by YouTube Music. Features high-fidelity audio playback, offline downloads, synchronized lyrics, and zero tracking.",
+  "url": "https://velunahq.github.io/",
+  "downloadUrl": "https://github.com/velunahq/veluna/releases",
+  "image": "https://velunahq.github.io/og-image.png?v=2",
+  "softwareVersion": "0.1.7",
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "author": {
+    "@type": "Person",
+    "name": "rry0ku",
+    "url": "https://github.com/rry0ku"
+  }
+}`}
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="icon" type="image/png" href="/veluna_icon.png?v=2">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<link rel="preload" as="image" href="/screenshots/ss2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <slot />
+</body>
+</html>

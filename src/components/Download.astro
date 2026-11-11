@@ -1,0 +1,79 @@
+---
+---
+<section id="download" class="section">
+  <div class="section-inner">
+    <span class="s-label reveal">Download</span>
+    <h2 class="s-head reveal d1">Available on Windows, macOS and Linux</h2>
+    <p class="s-sub reveal d2">Clean native installers with zero adware, zero bloat, and total privacy. Download and start listening in seconds.</p>
+
+    <div class="reveal d2">
+      <div class="version-chip" id="latest-version-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        v0.1.7 - Latest Release
+      </div>
+    </div>
+
+    <div class="dl-grid">
+      <div class="dl-card" id="card-linux">
+        <div class="dl-card-header">
+          <div class="dl-card-title-group">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+            <span class="dl-card-title">Linux</span>
+          </div>
+          <span class="dl-badge-sys" id="badge-linux" style="display:none;">Your system</span>
+        </div>
+        <div class="dl-btn-stack">
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-appimage" class="dl-btn">.AppImage, any distro</a>
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-deb" class="dl-btn">.deb, Ubuntu and Debian</a>
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-rpm" class="dl-btn">.rpm, Fedora and RHEL</a>
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-arch" class="dl-btn">.pkg.tar.zst, Arch Linux</a>
+        </div>
+        <div class="dl-card-desc">
+          The AppImage updates automatically. All builds require glibc 2.39 or newer (Ubuntu 24.04+, Debian 13+, Fedora 40+), and rpm requires mpv-libs.
+        </div>
+      </div>
+
+      <div class="dl-card" id="card-windows">
+        <div class="dl-card-header">
+          <div class="dl-card-title-group">
+            <svg viewBox="0 0 24 24" fill="var(--accent)" style="width:22px;height:22px;">
+              <path d="M0 3.449L9.75 2.1v9.451H0m10.95-9.6L24 0v11.4H10.95M0 12.6h9.75v9.451L0 20.699M10.95 12.6H24V24l-13.05-1.851"/>
+            </svg>
+            <span class="dl-card-title">Windows</span>
+          </div>
+          <span class="dl-badge-sys" id="badge-windows" style="display:none;">Your system</span>
+        </div>
+        <div class="dl-btn-stack">
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-exe" class="dl-btn">Installer (.exe)</a>
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-msi" class="dl-btn">MSI package (.msi)</a>
+        </div>
+        <div class="dl-card-desc">
+          The installer includes automatic in-app updates. MSI package is a standalone installation.
+        </div>
+      </div>
+
+      <div class="dl-card" id="card-macos">
+        <div class="dl-card-header">
+          <div class="dl-card-title-group">
+            <svg viewBox="0 0 24 24" fill="var(--accent)" style="width:22px;height:22px;">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 1.01-2.87-.96.04-2.08.64-2.73 1.4-.56.64-.99 1.7-.93 2.76 1.05.08 2.08-.54 2.65-1.29z"/>
+            </svg>
+            <span class="dl-card-title">macOS</span>
+          </div>
+          <span class="dl-badge-sys" id="badge-macos" style="display:none;">Your system</span>
+        </div>
+        <div class="dl-btn-stack">
+          <a href="https://github.com/velunahq/veluna/releases/latest" id="dl-dmg" class="dl-btn">.dmg, Apple Silicon</a>
+          <a href="https://github.com/velunahq/veluna#building-from-source" id="dl-intel" class="dl-btn">Intel Mac: build from source</a>
+        </div>
+        <div class="dl-card-desc">
+          Supports auto-update. Unsigned community build: first launch requires one Terminal command: <code>xattr -dr com.apple.quarantine /Applications/veluna.app</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
